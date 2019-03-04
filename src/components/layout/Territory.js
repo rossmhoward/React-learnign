@@ -33,14 +33,17 @@ export class Territory extends Component {
       background: '#f4f4f4',
       padding: '10px',
       width: '100vw',
-      height: '100vh'
+      height: '100vh',
+      position: 'absolute',
+      top: '0',
+      left: '0'
       // textDecoration: this.props.todo.completed ? 'line-through' : 'none'
     }
   }
 
   render() {
     return (
-      <div style={this.getStyle()}>
+      <div style={this.getStyle()} className="territory-wrapper">
         <BoneShrine />
         <CorpseFarm />
         <RefuseDrift />
