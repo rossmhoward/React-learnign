@@ -7,6 +7,7 @@ import Header from './components/layout/Header';
 import Todos from './components/Todos';
 // Call the Add Todo Component. Render in HTML with <AddTodo />
 import AddTodo from './components/AddTodo';
+import Gangs from './components/Gangs';
 import About from './components/pages/About';
 // Call the Territory Component. Render in HTML with <Territory />
 import Territory from './components/layout/Territory';
@@ -64,6 +65,7 @@ class App extends Component {
         <div className="App">
           <div className="container">
             <Header />
+            <Gangs />
             <Route exact path="/" render={props => (
               <React.Fragment>
                 <Territory />
